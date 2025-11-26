@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Creation d'un CV sur une page web</title>
+  <style>
+    :root{
+      --bg:#f3f6f9;
+      --card:#ffffff;
+      --accent:#1e88e5;
+      --muted:#6b7280;
+      --radius:50px;
+      --pad:20px;
+      font-family:Inter,system-ui,sans-serif;
+	  background: pink;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background: pink;color:#0f172a;line-height:1.45}
+    .container{max-width:850px;margin:39px auto;padding:28px}
+
+    .header{display:flex;gap:15px;align-items:center;background:white;padding:var(--pad);border-radius:var(--radius);box-shadow:6px 10px rgba(0,0,0,0.05)}
+    .photo{width:100px;height:100px;border-radius:14px;overflow:hidden;background:#e0e0e0}
+    .photo img{width:100%;height:100%;object-fit:cover}
+
+    .info .name{font-size:12px;font-weight:700}
+    .info .role{color:black;font-size:14px;margin-top:4px}
+
+    .layout{display:grid;grid-template-columns:1fr 280px;gap:18px;margin-top:18px}
+    .card{background:var(--card);padding:var(--pad);border-radius:var(--radius);box-shadow:0 4px 14px rgba(0,0,0,0.04)}
+
+    h3{color:var(--accent);font-size:15px;margin-bottom:6px}
+    ul{margin-left:28px;margin-top:6px}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .pill{padding:6px 12px;background:#eef3f6;border-radius:999px;font-size:13px}
+
+    @media(max-width:100px){.layout{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="photo">
+       <p>
+	   <img src="tof.png" alt="photo de profil" />
+	   </p>
+      </div>
+      <div class="info">
+        <div class="name">MALENGA Daril</div>
+        <div class="role">Étudiant en Licence — Reseau et Télécomunication</div>
+        <div style="color:var(--muted);font-size:14px;margin-top:8px">
+          Étudiant motivé en Licence 2, passionné par L'informatique, cherchant un stage pour développer mes compétences.
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <main class="card">
+        <section>
+          <h3>Formation</h3>
+
+          <ul>
+            <li><strong>Licence [Reseau et Télécomunication]</strong> — Institu International 2i (2025–2026)<br>
+              Cours importants : Programmation, Réseaux, Transmission par Faisceau Heutrzien, Telephonie…
+            </li>
+          </ul>
+		 
+        </section>
+		
+		<section>
+		  <h3>Competences</h3>
+		  <ul>
+		    <li><strong>Programmation C</strong><br>
+			</li>
+			<li><strong>Programmation Web</strong><br>
+			</li>
+			<li><strong>Travail D'equipe</strong><br>
+            </li>		 
+          </ul>
+        </section>		  
+		
+
+		<section style="margin-top:16px">
+		  <h3>Experiences</h3>
+		  <ul>
+		    <li><strong>Aucne</strong><br>
+			</li>
+			</ul>
+		</section>	
+      </main>
+
+      <aside class="card">
+        <section>
+          <h3>Contact</h3>
+          <div style="font-size:14px;color:var(--muted)">
+            Email : kingdaril3@mail.com<br>
+            Téléphone : +242 067996411<br>
+            Ville : Brazzaville
+          </div>
+        </section>
+
+        <section style="margin-top:16px">
+          <h3>Langues</h3>
+          <div style="font-size:14px;color:var(--muted)">
+            Français — Courant<br>
+            Anglais — Debutant
+          </div>
+        </section>
+
+        <section style="margin-top:16px">
+          <h3>Centres d'intérêt</h3>
+          <div style="font-size:14px;color:var(--muted)">
+            Informatique, sport, musique, lecture
+          </div>
+        </section>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
